@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place Order - Fauget Fast Food</title>
+    <link rel="stylesheet" href="../Style-CSS/form.css">
+</head>
+<body>
+
+<header>
+    <h1>Fauget <span>Fast Food</span></h1>
+    <nav>
+        <a href="../Home/index.html">Home</a>
+        <a href="../Pages/menu.html">Menu</a>
+        <a href="form.html">Order</a>
+        <a href="../Pages/deals.html">Special Deals</a>
+        <a href="../Pages/contact.html">Contact Us</a>
+    </nav>
+</header>
+    <main>
+        <div class="form-container">
+            <h2>Place Your Order</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="food-item">Select Your Meal:</label>
+                    <select id="food-item" name="food">
+                        <option value="burger">Fauget Classic Burger</option>
+                        <option value="pizza">Italian Style Pizza</option>
+                        <option value="fries">Golden Crispy Fries</option>
+                        <option value="deal">Special Deal 1</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Order Type:</label>
+                    <input type="radio" id="delivery" name="type" value="delivery" checked>
+                    <label style="display:inline;" for="delivery">Delivery</label>
+                    <input type="radio" id="pickup" name="type" value="pickup">
+                    <label style="display:inline;" for="pickup">Pickup</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Order</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
